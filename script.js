@@ -11,15 +11,48 @@
   var day = (selectedDate.getDate() + 1).toString().padStart(2, "0");
   var formattedDate = month + "-" + day;
 
-  if (formattedDate >= "01-20" && formattedDate <= "02-18") {
-    signElement.innerHTML = signs[10];
-    signImage.src = signImages[10];
-  } 
-
-   else if (formattedDate >= "12-22" && formattedDate <= "01-19") {
-    signElement.innerHTML = signs[9];
-    signImage.innerHTML = signImages[9];
+ if (formattedDate >= "01-20" && formattedDate <= "02-18") {
+     signElement.innerText = signs[10];
+     signImage.src = signImages[10];
+   }
+  else if (formattedDate >= "02-19" && formattedDate <= "03-20") {
+    signElement.innerText = signs[11];
+    signImage.src = signImages[11];
   }
-
-  console.log(formattedDate)
+  else if (formattedDate >= "04-20" && formattedDate <= "05-20") {
+    signElement.innerText = signs[1];
+    signImage.src = signImages[1];
+  }
+  else if (formattedDate >= "05-21" && formattedDate <= "06-20") {
+    signElement.innerText = signs[2];
+    signImage.innerText = signImages[2];
+  }
+  else if (formattedDate >= "06-21" && formattedDate <= "07-22") {
+    signElement.innerText = signs[3];
+    signImage.innerText = signImages[3];
+  }
+  else if (formattedDate >= "07-23" && formattedDate <= "08-22") {
+    signElement.innerText = signs[4];
+    signImage.src = signImages[4];
+  }
+  else if (formattedDate >= "08-23" && formattedDate <= "09-22") {
+    signElement.innerText = signs[5];
+    signImage.src = signImages[5];
+  }
+  else if (formattedDate >= "09-23" && formattedDate <= "10-22") {
+    signElement.innerText = signs[6];
+    signimage.src = signImages[6];
+  }
+  else if (formattedDate >= "10-23" && formattedDate <= "11-21") {
+    signElement.innerText = signs[7];
+    signimage.src = signImages[7];
+  }
+  else if (formattedDate >= "11-22" && formattedDate <= "12-21") {
+    signElement.innerText = signs[8];
+    signImage.src = signImages[8];
+  }
+   else {
+     signElement.innerHTML = signs[9];
+     signImage.src = signImages[9];
+   }
 }
